@@ -1,0 +1,84 @@
++ CONTSTRUCTOR SUCCESSFULLY INSTANTIATED AN OBJECT.
++ THERE ARE 4 STUDENTS IN THIS P0_GRADES OBJECT.
+__P1__ P1_GRADES CONSTRUCTOR CREATED A NEW OBJECT.
+====P2==== P2_GRADES CONSTRUCTOR.
+<><><>P3<><><> P3_GRADES CREATES OBJECT WITH NAMES.
++-+-+-+-P4-+-+-+-+ P4_GRADES CREATES OBJECT G1.
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++ CONTSTRUCTOR SUCCESSFULLY INSTANTIATED AN OBJECT.
++ THERE ARE 2 STUDENTS IN THIS P0_GRADES OBJECT.
+__P1__ P1_GRADES CONSTRUCTOR CREATED A NEW OBJECT.
+====P2==== P2_GRADES CONSTRUCTOR.
+<><><>P3<><><> P3_GRADES CREATES OBJECT WITH NAMES.
++-+-+-+-P4-+-+-+-+ P4_GRADES CREATES OBJECT G2.
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START P4_LIST FOR G1
++-+-+-+-P4-+-+-+-+ SINCE CALLED WITH 10, INHERITING FROM P1_LIST(1):
+__P1__ START P1_LIST
+__P1__ SINCE CALLED WITH 1, LIST IDS AND GRADES:
+__P1__ ====	======
+__P1__  ID 	GRADES
+__P1__ ====	======
+__P1__ 1111	90	80	71	
+__P1__ 3333	80	70	73	
+__P1__ 2222	99	60	72	
+__P1__ 4444	90	90	74	
+__P1__ END P1_LIST
++-+-+-+-P4-+-+-+-+ END P4_LIST FOR G1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START P4_LIST FOR G2
++-+-+-+-P4-+-+-+-+ SINCE CALLED WITH 10, INHERITING FROM P1_LIST(1):
+__P1__ START P1_LIST
+__P1__ SINCE CALLED WITH 1, LIST IDS AND GRADES:
+__P1__ ====	======
+__P1__  ID 	GRADES
+__P1__ ====	======
+__P1__ 1111	90	80	71	
+__P1__ 3333	80	70	73	
+__P1__ END P1_LIST
++-+-+-+-P4-+-+-+-+ END P4_LIST FOR G2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator==(G2)
++-+-+-+-P4-+-+-+-+ COMPARING n IN G1: 4 AND n IN G2: 2
++-+-+-+-P4-+-+-+-+ RETURNING FALSE
++-+-+-+-P4-+-+-+-+ END G1.operator==(G2)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator-=(2222)
++-+-+-+-P4-+-+-+-+ STUDENT WITH ID 2222 IS DELETED FROM G1.
++-+-+-+-P4-+-+-+-+ END G1.operator-=(2222)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator-=(4444)
++-+-+-+-P4-+-+-+-+ STUDENT WITH ID 4444 IS DELETED FROM G1.
++-+-+-+-P4-+-+-+-+ END G1.operator-=(4444)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator==(G2)
++-+-+-+-P4-+-+-+-+ COMPARING n IN G1: 2 AND n IN G2: 2
++-+-+-+-P4-+-+-+-+ RETURNING TRUE
++-+-+-+-P4-+-+-+-+ END G1.operator==(G2)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START P4_LIST FOR G1
++-+-+-+-P4-+-+-+-+ SINCE CALLED WITH 30, INHERITING FROM P3_LIST(1):
+<><><>P3<><><> START P3_LIST
+<><><>P3<><><> SINCE CALLED BY 1, LISTING  NAMES AND GRADES:
+<><><>P3<><><> KATE	OGGEN	1111	90	80	71
+<><><>P3<><><> ASILEM	RAYU	3333	80	70	73
+<><><>P3<><><> END P3_LIST
++-+-+-+-P4-+-+-+-+ END P4_LIST FOR G1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START P4_LIST FOR G2
++-+-+-+-P4-+-+-+-+ SINCE CALLED WITH 30, INHERITING FROM P3_LIST(1):
+<><><>P3<><><> START P3_LIST
+<><><>P3<><><> SINCE CALLED BY 1, LISTING  NAMES AND GRADES:
+<><><>P3<><><> KATE	OGGEN	1111	90	80	71
+<><><>P3<><><> ASILEM	RAYU	3333	80	70	73
+<><><>P3<><><> END P3_LIST
++-+-+-+-P4-+-+-+-+ END P4_LIST FOR G2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator-=(1234)
++-+-+-+-P4-+-+-+-+ NO SUCH STUDENT WITH ID 1234
++-+-+-+-P4-+-+-+-+ END G1.operator-=(1234)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
++-+-+-+-P4-+-+-+-+ START G1.operator-=(-1)
++-+-+-+-P4-+-+-+-+ INPUT ERROR 
++-+-+-+-P4-+-+-+-+ END G1.operator-=(-1)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+
